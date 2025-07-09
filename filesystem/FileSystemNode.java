@@ -1,6 +1,7 @@
+package filesystem;
 import java.util.ArrayList; 
 
-class FileSystemNode{
+public class FileSystemNode{
     NodeType type; 
     String name; 
     ArrayList<FileSystemNode> children; 
@@ -8,7 +9,7 @@ class FileSystemNode{
     public FileSystemNode(String name, NodeType type){
         this.name = name; 
         this.type = type; 
-        if(type == NodeType.DIRECTORY) {
+        if(type == NodeType.FOLDER) {
             this.children = new ArrayList<>(); 
         }
     }
@@ -26,7 +27,7 @@ class FileSystemNode{
     }
 
     public boolean addChild(FileSystemNode child){
-        if(child.type != NodeType.DIRECTORY){
+        if(this.type != NodeType.FOLDER){
             throw new UnsupportedOperationException("Can't add child to a FILE node."); 
         }
 
@@ -40,7 +41,7 @@ class FileSystemNode{
     }
 
     public boolean removeChild(FileSystemNode child){
-        if(child.type != NodeType.DIRECTORY){
+        if(child.type != NodeType.FOLDER){
             throw new UnsupportedOperationException("Can't add child to a FILE node."); 
         }
 
