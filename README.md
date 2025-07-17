@@ -10,7 +10,7 @@
 
 ## Overview
 
-Terminal File Manager is a Java-based virtual file system simulation that provides a command-line interface for managing files and directories. It mimics the basic functionality of a real file system, allowing users to practice and learn common terminal commands in a safe, controlled environment.
+Terminal File Manager is a virtual file system simulation that provides a command-line interface for managing files and directories. It mimics the basic functionality of a real file system, allowing users to practice and learn common terminal commands in a safe, controlled environment.
 
 The program represents the file system as a tree structure of nodes, where each node can be a file or a folder. The `FileManager` class manages the current directory context using a stack and supports navigation and modification of the file system through commands such as:
 
@@ -25,7 +25,5 @@ The program represents the file system as a tree structure of nodes, where each 
 - **`help`**: Provide usage information for all commands or a specific command.
 
 The file system hierarchy is built using the `FileSystemNode` class, which differentiates files and folders and stores children nodes for folders. The application also supports basic command validation and outputs helpful messages for invalid operations or inputs.
-
-The program’s modular design allows easy extension by adding new commands or modifying the file system structure. It provides a useful tool for those learning terminal commands, file system navigation, and basic file operations without interacting with the real file system.
 
 ---
