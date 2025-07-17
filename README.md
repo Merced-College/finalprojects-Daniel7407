@@ -3,7 +3,7 @@
 
 # Terminal File Manager
 
-**Name:** Daniel Pulido-Alaniz
+**Name:** Daniel Pulido-Alaniz  
 **Date:** 7/17/2025
 
 ---
